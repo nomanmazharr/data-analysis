@@ -52,6 +52,9 @@ if user_menu == 'Player-by-Player Analysis':
     athlete_df = df.drop_duplicates(subset=['Name', 'region'])
 
     x1 = athlete_df['Age'].dropna()
+    
+    
+    
     x2 = athlete_df[athlete_df['Medal'] == 'Gold']['Age'].dropna()
     x3 = athlete_df[athlete_df['Medal'] == 'Silver']['Age'].dropna()
     x4 = athlete_df[athlete_df['Medal'] == 'Bronze']['Age'].dropna()
